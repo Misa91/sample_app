@@ -1,7 +1,5 @@
 <h1>編集画面</h1>
-<%= form_with model: @list, url: update_list_path(@list.id), method: :patch do |f| %>
-<!-- ルーティングにupdateアクションを紐づけた -->
-<!-- HTTPメソッドをPATCH,名前付きルートをupdate_listに設定-->
+<%= form_with model: @list do |f| %>
 
   <h4>タイトル</h4>
   <%= f.text_field :title %>
